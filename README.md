@@ -1,0 +1,2 @@
+# RuijieWebAutoLogin
+基于python的锐捷V2校园网自动登录脚本
