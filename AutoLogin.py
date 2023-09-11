@@ -42,7 +42,8 @@ def work():
     content = str(res1.text.encode().decode("unicode_escape").encode('raw_unicode_escape').decode())
     i = content.find('"result":"')
     #    print(content)
-    if content[i + 10:i + 14] == 'wait':
+    # if content[i + 10:i + 14] == 'wait':
+    if content[i + 10:i + 14] == 'wait' or content[i + 10:i + 17] == 'success':
         print(time.asctime(time.localtime(time.time())), "当前处于在线状态。")
     else:
         print(time.asctime(time.localtime(time.time())), "当前已经下线，正在尝试登录！")
